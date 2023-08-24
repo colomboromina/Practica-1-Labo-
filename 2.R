@@ -1,0 +1,17 @@
+mensaje=readline("ingrese numero de tarjeta: ")
+cantidad<-nchar(mensaje)
+substr(mensaje,cantidad-5,cantidad)
+print(paste("los ultimos seis digitos son:",substr(mensaje,cantidad-5,cantidad)))
+
+vencimientotarjeta=readline("Ingrese vencimiento de la tarjeta: ")
+substr(vencimientotarjeta,4,7)
+print(paste("los ultimos seis digitos son:",))
+
+nombre=readline("Ingrese su nombre")
+apellido=readline("Ingrese su apellido")
+Materia=readline("materia que esta cursando")
+Aula=readline("numero de aula")
+pabellon=readline("indique en que pabellon cursa: Pabellon 0, Pabellon 1 o Pabellon 2")
+cantidad<-nchar(pabellon)
+numeropabellon=substr(pabellon,cantiad,cantidad)
+turno=readline("Indique el turno de la cursada: manana, tarde o noche")
